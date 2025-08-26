@@ -43,6 +43,7 @@ function reducer(state: TasksState, action: Action): TasksState {
 				status: "ABIERTA", // estado inicial
 				votes: 0,
 				createdAt: Date.now(),
+				commentsCount: 0,
 			};
 			return { ...state, tasks: [newTask, ...state.tasks] };
 		}

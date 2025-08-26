@@ -9,6 +9,7 @@ type BoardProps = {
 const STATUSES: Status[] = ["ABIERTA", "EN_PROGRESO", "COMPLETADA"];
 
 export default function Board({ tasks }: BoardProps) {
+	
 	const grouped = useMemo(() => {
 		const map: Record<Status, Task[]> = {
 			ABIERTA: [],
